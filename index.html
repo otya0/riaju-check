@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>リア充診断（クリスマス編）</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1>リア充診断（クリスマス編）</h1>
+        <p class="sub">予定と行動からリア充度を判定します。</p>
+
+        <div class="grid">
+            <label>
+                12/25の予定は？
+                <select id="plan">
+                    <option value="date">デート</option>
+                    <option value="friends">友達と遊ぶ</option>
+                    <option value="family">家族と過ごす</option>
+                    <option value="work">仕事/バイト/課題</option>
+                    <option value="solo">一人で自由行動</option>
+                    <option value="none">特に予定なし</option>
+                </select>
+            </label>
+
+            <label>
+                外出した？
+                <select id="goout">
+                    <option value="yes">した</option>
+                    <option value="no">してない</option>
+                </select>
+            </label>
+
+            <label>
+                だれと過ごした？
+                <select id="withwho">
+                    <option value="partner">恋人</option>
+                    <option value="friends">友達</option>
+                    <option value="family">家族</option>
+                    <option value="online">オンライン通話/ゲーム</option>
+                    <option value="alone">ひとり</option>
+                </select>
+            </label>
+
+            <label>
+                クリスマスっぽいことした？
+                <select id="xmas">
+                    <option value="yes">
+                        した（ケーキ/チキン/イルミ/プレゼント等）
+                    </option>
+                    <option value="no">してない</option>
+                </select>
+            </label>
+        </div>
+
+        <button id="judge">診断する</button>
+
+        <section id="result" class="result" aria-live="polite"></section>
+    </main>
+
+    <script src="./app.js"></script>
+    <script src="./snow.js"></script>
+</body>
+
+</html>
